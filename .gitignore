@@ -1,0 +1,7 @@
+cache/
+config/
+errors/
+language/
+logs/
+nbproject/
+third_party/
