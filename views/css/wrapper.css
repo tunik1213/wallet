@@ -1,0 +1,39 @@
+div#header{
+    font-size: 30px;
+    background-color: #252525;
+    padding: 10px;
+    margin-top:-50px; height:30px;
+}
+a.logo > span.text-white{
+    margin-left: -12px;
+    font-size: 34px;
+}
+div#main-menu{
+    float:right;
+}
+div#main-menu > a{
+    display: block;
+    float:left;
+    padding: 0 10px;
+    color:#868686;
+}
+div#main-menu > a:hover{
+    color:#fff;
+    transition: 1s;
+}
+div#footer{
+    padding: 10px;
+    color: #868686;
+    padding-top: 20px;
+    text-align: center;
+}
+.copyleft:before{
+    content:"©";
+    -webkit-transform: rotate(180deg); 
+    -moz-transform: rotate(180deg); 
+    -o-transform: rotate(180deg); 
+    -khtml-transform: rotate(180deg); 
+    -ms-transform: rotate(180deg); 
+    transform: rotate(180deg); 
+    display: inline-block;
+}
