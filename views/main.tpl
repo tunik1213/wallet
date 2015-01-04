@@ -1,0 +1,1 @@
+test<span class="fa-trash-o fa"></span>

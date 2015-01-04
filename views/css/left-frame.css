@@ -1,0 +1,26 @@
+#left > *{
+    padding:10px;
+}
+div.acc-name{
+    float:left;
+}
+div.acc-balance{
+    float:right;
+}
+
+div.add-account-form{
+    display:none;
+    padding:5px;
+}
+div.add-account-form > table{
+    white-space: nowrap;    
+}
+a#add-account-button > span.enter-key{
+    position: absolute;
+    right: 20px;
+}
+
+div.account{
+    float: left;
+    width: 100%;
+}

@@ -8,6 +8,7 @@ class Main extends Front_Controller {
 
     public function index()
     {
-	$this->output('test');
+        $this->template->assign('active_page','orders');
+	$this->output($this->template->fetch('main.tpl'));
     }
 }
