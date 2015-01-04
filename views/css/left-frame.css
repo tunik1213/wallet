@@ -24,3 +24,10 @@ div.account{
     float: left;
     width: 100%;
 }
+div.total-balance{
+    margin-top: 10px;
+    padding-bottom: 0 !important;
+}
+div.add-button-container{
+    text-align: center;
+}

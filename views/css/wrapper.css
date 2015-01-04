@@ -129,6 +129,9 @@ a.logo > span.text-white{
     margin-left: -12px;
     font-size: 34px;
 }
+a.logo > span.text-blue{
+    font-size: 26px;
+}
 div#main-menu{
     float:right;
 }
@@ -145,6 +148,7 @@ div#main-menu > a.active{
 div#main-menu > a:hover{
     color:#fff;
     transition: 1s;
+    text-decoration: none;
 }
 .copyleft:before{
     content:"©";

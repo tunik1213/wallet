@@ -51,5 +51,12 @@ $(document).ready(function(){
     $('div#main-menu > a.active').click(function(e){
         e.preventDefault();
     });
+    
+    $('div.accountitem').mouseover(function(){
+        $(this).find('.sum > a.fa').show();
+    });
+    $('div.accountitem').mouseout(function(){
+        $(this).find('.sum > a.fa').hide();
+    });
 });
 

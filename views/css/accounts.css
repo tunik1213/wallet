@@ -1,0 +1,25 @@
+div.accounts-detail-list{
+    margin-top:10px;
+}
+div.accountitem{
+    position:relative;
+    padding:10px;
+    margin-top:-10px;
+    margin-left:-10px;
+}
+div.accountitem:hover{
+    background-color: #f3f3f3;
+}
+div.accountitem > div.sum{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: right;
+}
+div.controls{
+    clear:both;
+}
+div.sum > a.fa{
+    font-size: 10px !important;
+    display: none;
+}

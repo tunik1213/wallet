@@ -25,8 +25,6 @@
     <a class="common-link" href="/accounts">настроить счета</a>
 </div>
 
-<div class="clear h10"></div>
-
 <div class="add-account-form">
     <table>
     <tr>
@@ -39,5 +37,8 @@
     </tr>*}
     </table>
 </div>
-<a href="#" class="button add-button" id="add-account-button">Добавить счет<span class="enter-key" style="display: none;" /></a>
+    
+<div class="add-button-container">
+    <a href="#" class="button add-button" id="add-account-button">Добавить счет<span class="enter-key" style="display: none;" /></a>
+</div>
    

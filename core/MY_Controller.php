@@ -7,6 +7,9 @@ class Base_Controller extends CI_Controller
         parent::__construct();
         ini_set('display_errors', true);
         error_reporting(E_ALL + E_NOTICE);
+        
+        $this->load->model('_accounts');
+        $this->template->assign('accounts', $this->_accounts->get());
    }
 
 }
@@ -20,8 +23,6 @@ class Front_Controller extends Base_Controller
 
     protected function output($content)
     {
-        $this->load->model('_accounts');
-        $this->template->assign('accounts', $this->_accounts->get());
         $this->template->assign('content', $content);
         $this->template->display('index.tpl');
     }

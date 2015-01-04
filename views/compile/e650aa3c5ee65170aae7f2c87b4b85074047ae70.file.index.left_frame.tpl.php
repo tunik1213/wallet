@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-01-04 11:50:06
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-01-04 19:57:27
          compiled from "application/views/index.left_frame.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:114593006554a7dfe41d2400-50557275%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e650aa3c5ee65170aae7f2c87b4b85074047ae70' => 
     array (
       0 => 'application/views/index.left_frame.tpl',
-      1 => 1420365005,
+      1 => 1420394245,
       2 => 'file',
     ),
   ),
@@ -64,8 +64,6 @@ $_smarty_tpl->tpl_vars['acc']->_loop = true;
     <a class="common-link" href="/accounts">настроить счета</a>
 </div>
 
-<div class="clear h10"></div>
-
 <div class="add-account-form">
     <table>
     <tr>
@@ -75,5 +73,8 @@ $_smarty_tpl->tpl_vars['acc']->_loop = true;
     
     </table>
 </div>
-<a href="#" class="button add-button" id="add-account-button">Добавить счет<span class="enter-key" style="display: none;" /></a>
+    
+<div class="add-button-container">
+    <a href="#" class="button add-button" id="add-account-button">Добавить счет<span class="enter-key" style="display: none;" /></a>
+</div>
    <?php }} ?>

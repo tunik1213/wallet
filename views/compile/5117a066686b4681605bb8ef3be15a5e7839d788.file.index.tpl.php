@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-01-04 11:57:10
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-01-04 19:26:31
          compiled from "application/views/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1961714543549dbcf83f19f3-53722658%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5117a066686b4681605bb8ef3be15a5e7839d788' => 
     array (
       0 => 'application/views/index.tpl',
-      1 => 1420365429,
+      1 => 1420392390,
       2 => 'file',
     ),
   ),
@@ -43,6 +43,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <link rel="stylesheet" href="/application/views/css/font-awesome.css" type="text/css" media="screen, projection"/>
     <link rel="stylesheet" href="/application/views/css/wrapper.css" type="text/css" media="screen, projection"/>
      <link rel="stylesheet" href="/application/views/css/left-frame.css" type="text/css" media="screen, projection"/>
+     <link rel="stylesheet" href="/application/views/css/accounts.css" type="text/css" media="screen, projection"/>
 
 </head>
 
@@ -54,7 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </a>
 
         <div id="main-menu">
-            <a href="/orders" <?php if ($_smarty_tpl->tpl_vars['active_page']->value=='orders') {?>class="active"<?php }?>>Записи</a>
+            <a href="/main" <?php if ($_smarty_tpl->tpl_vars['active_page']->value=='orders') {?>class="active"<?php }?>>Записи</a>
             <a href="/products" <?php if ($_smarty_tpl->tpl_vars['active_page']->value=='products') {?>class="active"<?php }?>>Товары/услуги</a>
             <a href="/accounts" <?php if ($_smarty_tpl->tpl_vars['active_page']->value=='accounts') {?>class="active"<?php }?>>Счета</a>
             <a href="/statistics" <?php if ($_smarty_tpl->tpl_vars['active_page']->value=='statistics') {?>class="active"<?php }?>>Статистика</a>
@@ -63,8 +64,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
     <div id="container">
         <div id="content">
-            <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+            <div style="padding:10px; padding-left:20px;">
+                <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
 
+            </div>
         </div>
 
         <div id="left">
