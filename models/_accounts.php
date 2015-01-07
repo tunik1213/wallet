@@ -6,11 +6,15 @@ class _Accounts extends MY_model {
     {
         parent::__construct();
     }
-    
     public function get(){
-        return $this->db->query(
-                'select * from accounts'
-                )->result_array();
+        $this->db->select('*')
+        ->where('deleted',FALSE);
+        return $this->db->get('accounts')->result_array();
+    }
+    public function getId($id){            
+        $this->db->select('*')
+        ->where('id',$id);
+        return $this->db->get('accounts')->row_array();
     }
     
     public function add($name){
@@ -20,5 +24,24 @@ class _Accounts extends MY_model {
                 );
         if ($res)
             return $this->db->insert_id();
+    }
+    
+    public function delete($id){
+        $res = $this->db->query(
+                'update accounts '
+                . 'set deleted = TRUE '
+                . 'where id = '.$this->db->escape($id)
+                );
+        if ($res)
+            return $this->getId($id);
+    }
+    
+    public function restore($id){
+        return $this->db->update(
+                'accounts'
+                ,['deleted' => FALSE]
+                ,['id' => $id]
+            );
+            
     }
 }

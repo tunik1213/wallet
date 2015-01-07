@@ -16,6 +16,9 @@ a{
     color:#005f82;
     font-size: 13px;
 }
+div.jGrowl-message a{
+    color:#29adb2 !important;
+}
 a:hover{
     text-decoration: underline;
 }

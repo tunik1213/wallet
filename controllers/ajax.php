@@ -23,4 +23,16 @@ class Ajax extends Front_Controller {
 
         echo json_encode($result);
     }
+    
+    public function deleteAccount(){
+        $id = filter_input(INPUT_POST, 'id');
+        
+        $this->load->model('_accounts');
+        $res = $this->_accounts->delete($id);
+        
+        $result = ['status'=> ($res) ? 'success' : 'error'
+            ,'removedAcc' => $res];
+
+        echo json_encode($result);
+    }
 }

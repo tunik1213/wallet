@@ -11,4 +11,14 @@ class Accounts extends Front_Controller {
         $this->template->assign('active_page','accounts');
 	$this->output($this->template->fetch('accounts.tpl'));
     }
+    
+    public function restore($id){
+        if (!ord($id)>0) return;
+        
+        $this->load->model('_accounts');
+        $this->_accounts->restore($id);
+        
+        $this->template->assign('accounts', $this->_accounts->get());
+        $this->index();
+    }
 }

@@ -6,9 +6,11 @@
 	<title></title>
         
     <script type="text/javascript" src="/application/views/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/application/views/js/jquery.jgrowl.min.js"></script>
+    <script type="text/javascript" src="/application/views/js/engine.js"></script>
 
     <link rel="stylesheet" href="/application/views/css/style.css" type="text/css" media="screen, projection"/>
-    <script type="text/javascript" src="/application/views/js/engine.js"></script>
+    <link rel="stylesheet" href="/application/views/css/jquery.jgrowl.min.css" type="text/css" media="screen, projection"/>
     
     <link rel="stylesheet" href="/application/views/css/font-awesome.css" type="text/css" media="screen, projection"/>
     <link rel="stylesheet" href="/application/views/css/wrapper.css" type="text/css" media="screen, projection"/>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-01-04 19:26:31
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-01-07 12:15:56
          compiled from "application/views/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1961714543549dbcf83f19f3-53722658%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5117a066686b4681605bb8ef3be15a5e7839d788' => 
     array (
       0 => 'application/views/index.tpl',
-      1 => 1420392390,
+      1 => 1420625751,
       2 => 'file',
     ),
   ),
@@ -34,11 +34,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <?php echo '<script'; ?>
  type="text/javascript" src="/application/views/js/jquery-2.1.3.min.js"><?php echo '</script'; ?>
 >
-
-    <link rel="stylesheet" href="/application/views/css/style.css" type="text/css" media="screen, projection"/>
+    <?php echo '<script'; ?>
+ type="text/javascript" src="/application/views/js/jquery.jgrowl.min.js"><?php echo '</script'; ?>
+>
     <?php echo '<script'; ?>
  type="text/javascript" src="/application/views/js/engine.js"><?php echo '</script'; ?>
 >
+
+    <link rel="stylesheet" href="/application/views/css/style.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="/application/views/css/jquery.jgrowl.min.css" type="text/css" media="screen, projection"/>
     
     <link rel="stylesheet" href="/application/views/css/font-awesome.css" type="text/css" media="screen, projection"/>
     <link rel="stylesheet" href="/application/views/css/wrapper.css" type="text/css" media="screen, projection"/>
