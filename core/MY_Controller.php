@@ -26,4 +26,8 @@ class Front_Controller extends Base_Controller
         $this->template->assign('content', $content);
         $this->template->display('index.tpl');
     }
+    
+    protected function _redirect($url){
+        header('Location: '.$url);
+    }
 }

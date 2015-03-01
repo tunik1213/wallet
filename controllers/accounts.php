@@ -18,18 +18,19 @@ class Accounts extends Front_Controller {
         
         $this->_accounts->restore($id);
         
-        $this->template->assign('accounts', $this->_accounts->get());
-        $this->index();
+//        $this->template->assign('accounts', $this->_accounts->get());
+//        $this->index();
+          $this->_redirect('/accounts/');
     }
     
     public function correct(){
         $id = (int)filter_input(INPUT_POST, 'id');
         $sum = (float)filter_input(INPUT_POST, 'sum');
-//var_dump($sum);
-//return;
+
         $this->_accounts->correct($id,$sum);
         
-        $this->template->assign('accounts', $this->_accounts->get());
-        $this->index();
+//        $this->template->assign('accounts', $this->_accounts->get());
+//        $this->index();
+           $this->_redirect('/accounts/');
     }
 }

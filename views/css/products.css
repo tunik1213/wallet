@@ -1,0 +1,8 @@
+div.item-list{
+    position: relative;
+}
+div.item-list > a.add-item{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

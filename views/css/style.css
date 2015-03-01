@@ -15,6 +15,7 @@ a{
     text-decoration: none;
     color:#005f82;
     font-size: 13px;
+    cursor:pointer;
 }
 div.jGrowl-message a{
     color:#29adb2 !important;
@@ -121,10 +122,8 @@ div.clear{
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#005f82', endColorstr='#0093c8');
 	background-color:#005f82;
         text-decoration: none;
-}.button:active {
-	position:relative;
-	top:1px;
 }
+
 span.enter-key{
     position:relative;
     top:3px;

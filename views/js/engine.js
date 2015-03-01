@@ -82,21 +82,26 @@ $(document).ready(function(){
        e.preventDefault();
     });
     
-    $('a.acc-sum-edit').on('click',function(e){ // debugger;
-        $(this).show().addClass('editing');
-        
-        var sum = $(this).parent().find('span.sum').text();
-        
+    $('a.open-modal').on('click',function(e){
         var p = $(this).position();
-        $('div#edit-account-sum')
-                .insertAfter($(this).parent())
-                .show().css('right','0')
-                .find('input.sum').val(sum).focus().select()
-                .parent().find('input.id').val($(this).attr('id'));
+        var formId = $(this).attr('modal');
+        
+        $(formId)
+            .insertAfter($(this).parent())
+            .show().css('right','0')
+            .find('input').focus().select();
+    
+        e.preventDefault();
     });
     
     $('.close-selector').on('click',function(){
         $(this).parent().hide();
     });
+    
+    $('form a.form-submit').on('click',function(e){
+        $(this).closest('form').submit();
+        e.preventDefault();
+    });
+   
 });
 
