@@ -44,4 +44,14 @@ class _Accounts extends MY_model {
             );
             
     }
+
+    public function correct($id,$sum){
+        $this->db->insert('orders',[
+            'type' => 1,
+            'accountId' => $id,
+            'sum' => $sum
+        ]);
+        return $this->db->insert_id();
+    }
+    
 }

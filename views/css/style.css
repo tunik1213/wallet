@@ -25,7 +25,7 @@ a:hover{
 .fw_b{
     font-weight: bold;
 }
-.sum{
+div.sum{
     color:#0093c8;
 }
 .currency{
@@ -113,6 +113,7 @@ div.clear{
     text-decoration: none;
     text-indent: 0;
     text-shadow: 1px 1px 0 #000000;
+    position:relative;
 }
 .button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005f82), color-stop(1, #0093c8) );
@@ -124,6 +125,11 @@ div.clear{
 	position:relative;
 	top:1px;
 }
+span.enter-key{
+    position:relative;
+    top:3px;
+    padding-left: 2px;
+}
 span.enter-key:before{
     content: "⏎";
     font: 20px/20px Tahoma,Verdana,sans-serif;
@@ -132,4 +138,33 @@ span.enter-key:before{
 h1{
     font-size: 20px;
     line-height: 30px;
+}
+div.modal-form{
+    position:absolute;
+    display:none;
+    box-shadow: 5px 5px 13px 0 rgba(0, 50, 116, 0.5);
+    border: 2px solid #005f82;
+    background-color: #fff;
+    border-radius: 5px;
+    padding:5px;
+    z-index: 100;
+}
+input.sum{
+    text-align: right;
+}
+div.close-selector{
+    cursor:pointer;
+    position:absolute;
+    top:4px;
+    right:5px;
+    color:#000;
+}
+/*div.close-selector:before{
+    content:"X";
+}*/
+div.close-selector:hover{
+    color:#99001A;
+}
+div.page-title > hr{
+    margin-left: -10px;
 }

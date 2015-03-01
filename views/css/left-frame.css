@@ -15,15 +15,6 @@ div.add-account-form{
 div.add-account-form > table{
     white-space: nowrap;    
 }
-a#add-account-button > span.enter-key{
-    position: absolute;
-    padding-left: 2px;
-    padding-top: 3px;
-}
-a#add-account-button.form-active{
-    padding-right:25px;
-}
-
 div.account{
     float: left;
     width: 100%;

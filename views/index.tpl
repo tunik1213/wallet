@@ -14,8 +14,9 @@
     
     <link rel="stylesheet" href="/application/views/css/font-awesome.css" type="text/css" media="screen, projection"/>
     <link rel="stylesheet" href="/application/views/css/wrapper.css" type="text/css" media="screen, projection"/>
-     <link rel="stylesheet" href="/application/views/css/left-frame.css" type="text/css" media="screen, projection"/>
-     <link rel="stylesheet" href="/application/views/css/accounts.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="/application/views/css/left-frame.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="/application/views/css/accounts.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="/application/views/css/products.css" type="text/css" media="screen, projection"/>
 
 </head>
 

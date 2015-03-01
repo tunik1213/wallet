@@ -2,7 +2,7 @@ function info_alert(text){
     $.jGrowl(text, { 
         theme: 'Left', 
         appendTo: 'h1',
-        life:1000000000
+        life:5000
     });
 }
 function open_form(){
@@ -82,13 +82,21 @@ $(document).ready(function(){
        e.preventDefault();
     });
     
-//    $('a.restoreAcc').on('click',function(e){
-//        e.preventDefault();
-//        $.ajax({
-//            url: $(this).attr('href')
-//        }).done(function(){
-//            location.reload();
-//        });
-//    });
+    $('a.acc-sum-edit').on('click',function(e){ // debugger;
+        $(this).show().addClass('editing');
+        
+        var sum = $(this).parent().find('span.sum').text();
+        
+        var p = $(this).position();
+        $('div#edit-account-sum')
+                .insertAfter($(this).parent())
+                .show().css('right','0')
+                .find('input.sum').val(sum).focus().select()
+                .parent().find('input.id').val($(this).attr('id'));
+    });
+    
+    $('.close-selector').on('click',function(){
+        $(this).parent().hide();
+    });
 });
 

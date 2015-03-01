@@ -4,6 +4,7 @@ class Accounts extends Front_Controller {
 
     public function __construct() {
         parent::__construct();
+        $this->load->model('_accounts');
     }
 
     public function index()
@@ -15,8 +16,18 @@ class Accounts extends Front_Controller {
     public function restore($id){
         if (!ord($id)>0) return;
         
-        $this->load->model('_accounts');
         $this->_accounts->restore($id);
+        
+        $this->template->assign('accounts', $this->_accounts->get());
+        $this->index();
+    }
+    
+    public function correct(){
+        $id = (int)filter_input(INPUT_POST, 'id');
+        $sum = (float)filter_input(INPUT_POST, 'sum');
+//var_dump($sum);
+//return;
+        $this->_accounts->correct($id,$sum);
         
         $this->template->assign('accounts', $this->_accounts->get());
         $this->index();
